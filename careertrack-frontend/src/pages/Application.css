@@ -1,0 +1,357 @@
+/* =========================
+   APPLICATION PAGE
+========================= */
+
+.application-container {
+    min-height: 100vh;
+
+    background: #f5f7fb;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 50px 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   APPLICATION CARD
+========================= */
+
+.application-card {
+    width: 100%;
+    max-width: 650px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.application-card h1 {
+    margin: 0 0 8px;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+.application-card > p {
+    margin: 0 0 28px;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.application-card form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.form-group label {
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   INPUT / SELECT / TEXTAREA
+========================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #1f2937;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+    border-color: #9ca3af;
+}
+
+
+/* =========================
+   FOCUS
+========================= */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.form-group textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.application-card form > button[type="submit"] {
+    border: none;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    margin-top: 5px;
+}
+
+.application-card form > button[type="submit"]:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   CANCEL BUTTON
+========================= */
+
+.cancel-button {
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+
+    color: #374151;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.cancel-button:hover {
+    background: #f3f4f6;
+
+    border-color: #9ca3af;
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.application-card .success-message {
+    margin: 0;
+
+    padding: 11px 14px;
+
+    background: #f0fdf4;
+
+    border: 1px solid #bbf7d0;
+
+    border-radius: 8px;
+
+    color: #15803d;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.application-card .error-message {
+    margin: 0;
+
+    padding: 11px 14px;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    border-radius: 8px;
+
+    color: #dc2626;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   LOADING STATE
+========================= */
+
+.application-card h1 + .loading-text {
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .application-container {
+        padding: 30px 15px;
+    }
+
+    .application-card {
+        padding: 25px 20px;
+
+        border-radius: 12px;
+    }
+
+    .application-card h1 {
+        font-size: 24px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+    .application-container {
+        padding: 20px 10px;
+    }
+
+    .application-card {
+        padding: 22px 16px;
+    }
+
+    .application-card h1 {
+        font-size: 22px;
+    }
+
+    .application-card > p {
+        font-size: 14px;
+    }
+
+    .application-card form {
+        gap: 15px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 11px;
+    }
+}
