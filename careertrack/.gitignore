@@ -26,6 +26,7 @@ target/
 .env.*
 !.env.example
 
+application.properties
 application-prod.properties
 
 
